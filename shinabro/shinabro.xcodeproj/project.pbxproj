@@ -15,6 +15,14 @@
 		ED5848242C545C3D006DF10E /* FetchArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5848232C545C3D006DF10E /* FetchArticleRepository.swift */; };
 		ED5848262C545C7C006DF10E /* QnARepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5848252C545C7C006DF10E /* QnARepository.swift */; };
 		ED5848282C545C85006DF10E /* SummarizeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5848272C545C85006DF10E /* SummarizeRepository.swift */; };
+		ED58482D2C545D0E006DF10E /* FetchArticleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58482C2C545D0E006DF10E /* FetchArticleUseCase.swift */; };
+		ED58482F2C545D15006DF10E /* DefaultFetchArticleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58482E2C545D15006DF10E /* DefaultFetchArticleUseCase.swift */; };
+		ED5848352C545D6F006DF10E /* MakeQnAUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5848342C545D6F006DF10E /* MakeQnAUseCase.swift */; };
+		ED5848372C545D73006DF10E /* DefaultMakeQnAUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5848362C545D73006DF10E /* DefaultMakeQnAUseCase.swift */; };
+		ED5848392C545DA1006DF10E /* UserAnswerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5848382C545DA1006DF10E /* UserAnswerUseCase.swift */; };
+		ED58483B2C545DA6006DF10E /* DefaultUserAnswerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58483A2C545DA6006DF10E /* DefaultUserAnswerUseCase.swift */; };
+		ED58483D2C545DD1006DF10E /* UserSummarizeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58483C2C545DD1006DF10E /* UserSummarizeUseCase.swift */; };
+		ED58483F2C545DDE006DF10E /* DefaultUserSummarizeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58483E2C545DDE006DF10E /* DefaultUserSummarizeUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		ED5848232C545C3D006DF10E /* FetchArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArticleRepository.swift; sourceTree = "<group>"; };
 		ED5848252C545C7C006DF10E /* QnARepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QnARepository.swift; sourceTree = "<group>"; };
 		ED5848272C545C85006DF10E /* SummarizeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizeRepository.swift; sourceTree = "<group>"; };
+		ED58482C2C545D0E006DF10E /* FetchArticleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArticleUseCase.swift; sourceTree = "<group>"; };
+		ED58482E2C545D15006DF10E /* DefaultFetchArticleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFetchArticleUseCase.swift; sourceTree = "<group>"; };
+		ED5848342C545D6F006DF10E /* MakeQnAUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQnAUseCase.swift; sourceTree = "<group>"; };
+		ED5848362C545D73006DF10E /* DefaultMakeQnAUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMakeQnAUseCase.swift; sourceTree = "<group>"; };
+		ED5848382C545DA1006DF10E /* UserAnswerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnswerUseCase.swift; sourceTree = "<group>"; };
+		ED58483A2C545DA6006DF10E /* DefaultUserAnswerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserAnswerUseCase.swift; sourceTree = "<group>"; };
+		ED58483C2C545DD1006DF10E /* UserSummarizeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSummarizeUseCase.swift; sourceTree = "<group>"; };
+		ED58483E2C545DDE006DF10E /* DefaultUserSummarizeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserSummarizeUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +149,56 @@
 		ED5848222C545C01006DF10E /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				ED58482B2C545CF0006DF10E /* FetchArticleUseCase */,
+				ED58482A2C545CED006DF10E /* QnAUseCase */,
+				ED5848292C545CEB006DF10E /* SummarizeUseCase */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		ED5848292C545CEB006DF10E /* SummarizeUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				ED58483C2C545DD1006DF10E /* UserSummarizeUseCase.swift */,
+				ED58483E2C545DDE006DF10E /* DefaultUserSummarizeUseCase.swift */,
+			);
+			path = SummarizeUseCase;
+			sourceTree = "<group>";
+		};
+		ED58482A2C545CED006DF10E /* QnAUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				ED5848332C545D50006DF10E /* MakeQnAUseCase */,
+				ED5848322C545D4D006DF10E /* UserAnswerUseCase */,
+			);
+			path = QnAUseCase;
+			sourceTree = "<group>";
+		};
+		ED58482B2C545CF0006DF10E /* FetchArticleUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				ED58482C2C545D0E006DF10E /* FetchArticleUseCase.swift */,
+				ED58482E2C545D15006DF10E /* DefaultFetchArticleUseCase.swift */,
+			);
+			path = FetchArticleUseCase;
+			sourceTree = "<group>";
+		};
+		ED5848322C545D4D006DF10E /* UserAnswerUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				ED5848382C545DA1006DF10E /* UserAnswerUseCase.swift */,
+				ED58483A2C545DA6006DF10E /* DefaultUserAnswerUseCase.swift */,
+			);
+			path = UserAnswerUseCase;
+			sourceTree = "<group>";
+		};
+		ED5848332C545D50006DF10E /* MakeQnAUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				ED5848342C545D6F006DF10E /* MakeQnAUseCase.swift */,
+				ED5848362C545D73006DF10E /* DefaultMakeQnAUseCase.swift */,
+			);
+			path = MakeQnAUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +273,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5848242C545C3D006DF10E /* FetchArticleRepository.swift in Sources */,
+				ED5848372C545D73006DF10E /* DefaultMakeQnAUseCase.swift in Sources */,
 				ED5848022C545916006DF10E /* AppDelegate.swift in Sources */,
 				ED5848282C545C85006DF10E /* SummarizeRepository.swift in Sources */,
 				ED5848262C545C7C006DF10E /* QnARepository.swift in Sources */,
+				ED58483F2C545DDE006DF10E /* DefaultUserSummarizeUseCase.swift in Sources */,
 				ED5848042C545916006DF10E /* SceneDelegate.swift in Sources */,
+				ED58483D2C545DD1006DF10E /* UserSummarizeUseCase.swift in Sources */,
+				ED5848392C545DA1006DF10E /* UserAnswerUseCase.swift in Sources */,
+				ED58483B2C545DA6006DF10E /* DefaultUserAnswerUseCase.swift in Sources */,
+				ED58482D2C545D0E006DF10E /* FetchArticleUseCase.swift in Sources */,
+				ED5848352C545D6F006DF10E /* MakeQnAUseCase.swift in Sources */,
+				ED58482F2C545D15006DF10E /* DefaultFetchArticleUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
