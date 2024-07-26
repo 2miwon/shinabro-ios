@@ -98,8 +98,6 @@
 				ED5848172C545981006DF10E /* Domain */,
 				ED5848162C545964006DF10E /* Data */,
 				ED5848152C545960006DF10E /* Application */,
-				ED58480A2C545917006DF10E /* Assets.xcassets */,
-				ED58480F2C545917006DF10E /* Info.plist */,
 			);
 			path = shinabro;
 			sourceTree = "<group>";
@@ -149,6 +147,8 @@
 		ED5848192C54598C006DF10E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				ED58480A2C545917006DF10E /* Assets.xcassets */,
+				ED58480F2C545917006DF10E /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
